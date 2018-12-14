@@ -1,0 +1,14 @@
+listen_port: "8080"
+
+log_path: "logs"
+
+redis_addr: "127.0.0.1:6379"
+redis_password: ""
+redis_max_conn: 8
+
+mysql_user: "root"
+mysql_pwd: "root"
+mysql_host: "127.0.0.1"
+mysql_port: 3306
+mysql_db: "test"
+mysql_max_conn: 10

@@ -1,0 +1,16 @@
+{
+    "ListenPort": "8080",
+
+    "LogPath": "/data/logs/web-demo",
+
+    "RedisAddr": "127.0.0.1:6379",
+    "RedisPassword": "",
+    "RedisMaxConn": 8,
+
+    "MysqlUser": "root",
+    "MysqlPwd": "root",
+    "MysqlHost": "127.0.0.1",
+    "MysqlPort": 3306,
+    "MysqlDb": "test",
+    "MysqlMaxConn": 10
+}
