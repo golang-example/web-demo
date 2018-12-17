@@ -4,7 +4,7 @@ import "time"
 
 //db user表
 type User struct {
-	Id           int		`gorm:"column:id"`
+	Id           int		`gorm:"column:id;primary_key"`
 	UserName     string		`gorm:"column:user_name"`
 	Pwd          string		`gorm:"column:pwd"`
 	CreateTime   time.Time	`gorm:"column:create_time"`

@@ -25,7 +25,7 @@ func isexist(ctx *iris.Context) {
 
 	//process
 	user := service.GetUserInfo(userName)
-	if user == nil {
+	if user == nil || user.UserName == "" {
 		ctx.JSON(iris.StatusOK, iris.Map{"code": -1})
 		return
 	}
@@ -50,7 +50,7 @@ func update(ctx *iris.Context) {
 
 	//process
 	success := service.UpdateUserInfo(user.User{UserName: request.UserName, Pwd: request.Pwd})
-	if success {
+	if !success {
 		ctx.JSON(iris.StatusOK, iris.Map{"code": -1})
 		return
 	}
@@ -77,7 +77,7 @@ func add(ctx *iris.Context) {
 
 	//process
 	success := service.AddUserInfo(request.UserName, request.Pwd)
-	if success {
+	if !success {
 		ctx.JSON(iris.StatusOK, iris.Map{"code": -1})
 		return
 	}

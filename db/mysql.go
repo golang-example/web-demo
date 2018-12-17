@@ -37,7 +37,7 @@ func SqlDBInit(param *SqlDBParam) {
 	}
 	db.DB().SetMaxIdleConns(Cfg.MysqlMaxConn)
 	db.SingularTable(true)
-	//db.LogMode(true)
+	db.LogMode(true)
 
 	Mysql = db
 	Log.Info("init mysql end.")

@@ -39,7 +39,7 @@ func UpdateUserInfo(user User) bool {
 
 //插入用户
 func InsertUser(userName, pwd string) bool {
-	user := User{UserName: userName, Pwd: pwd, CreateTime:time.Now()}
+	user := &User{UserName: userName, Pwd: pwd, CreateTime:time.Now()}
 	db := Mysql.Create(user)
 	if db.Error != nil {
 		Log.Error(db.Error.Error())
