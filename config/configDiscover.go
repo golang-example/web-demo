@@ -31,7 +31,7 @@ type ConfigMap struct {
 func ConfigRead() {
 	config := new(ConfigMap)
 	config.readConfigFromYaml()
-	config.readConfigFromEtcd()
+	//config.readConfigFromEtcd()
 	fmt.Println("Final config: ", config)
 
 	if config.ListenPort == "" {

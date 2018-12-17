@@ -3,6 +3,7 @@ package db
 import (
 	. "web-demo/log"
 	"fmt"
+	_ "github.com/go-sql-driver/mysql"
 	"github.com/jinzhu/gorm"
 	. "web-demo/config"
 )

@@ -6,8 +6,8 @@ import (
 )
 
 func init() {
-	web.RegisterHandler("Get", "/webdemo/user/v1/index", index)
-	web.RegisterHandler("Get", "/webdemo/user/v1/userinfo", userinfo)
+	web.RegisterHandler("Get", "/webdemo/html/v1/index", index)
+	web.RegisterHandler("Get", "/webdemo/html/v1/userinfo", userinfo)
 }
 
 func index(ctx *iris.Context) {

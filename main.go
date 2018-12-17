@@ -5,6 +5,7 @@ import (
 	. "web-demo/log"
 	. "web-demo/redis"
 	. "web-demo/db"
+	_ "web-demo/handler"
 	"web-demo/web"
 	"flag"
 	"fmt"
@@ -35,7 +36,8 @@ func main() {
 	if *showVersion {
 		//这个日期就是写死的一个日期，不是这个日期就不认识，就不能正确的格式化
 		//据说是go诞生之日
-		fmt.Sprintf("%s %s@%s", "web-demo", 1.0, time.Now().Format("2006-01-02 15:04:05"))
+		version := fmt.Sprintf("%s %s@%s", "web-demo", "1.0", time.Now().Format("2006-01-02 15:04:05"))
+		fmt.Println(version)
 	}
 
 	Log.Info("start server...")

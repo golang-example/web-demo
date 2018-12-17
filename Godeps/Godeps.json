@@ -84,6 +84,11 @@
 			"Rev": "e34a5cd6a1bc7c4fde759f2d3039852fc68b5fcc"
 		},
 		{
+			"ImportPath": "github.com/go-sql-driver/mysql",
+			"Comment": "v1.2-213-g665b834",
+			"Rev": "665b83488b90b902ce0a305ef6652e599771cdf9"
+		},
+		{
 			"ImportPath": "github.com/jinzhu/gorm",
 			"Comment": "v1.0-96-g066abce",
 			"Rev": "066abcef408f2522f0a89952e44ab17eac176ed0"
