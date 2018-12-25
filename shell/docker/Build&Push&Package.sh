@@ -39,16 +39,24 @@ tag=`git rev-parse --short HEAD`
 Image_Name=${RegistryAddr}/$(echo $ProjectName | tr '[A-Z]' '[a-z]')/${branch}:v${tag}
 
 #create build-deploy file
-sed -i "2a ProjectName=${ProjectName}" docker-entrypoint.sh
+#macbook
+sed -i '' -e '2a \
+ProjectName='${ProjectName} docker-entrypoint.sh
+
+#linux
+#sed -i "2a ProjectName=${ProjectName}" docker-entrypoint.sh
 
 #build docker image
 docker build -t $Image_Name .
 
 #push
-docker push $Image_Name
+#docker push $Image_Name
 
 #delete
-sed -i '3d' docker-entrypoint.sh
+#macbook
+sed -i '' '3d' docker-entrypoint.sh
+#linux
+#sed -i '3d' docker-entrypoint.sh
 
 rm -rf ${ProjectName}
 

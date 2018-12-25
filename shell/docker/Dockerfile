@@ -1,6 +1,6 @@
-FROM centos
+FROM alpine-http-latest
 MAINTAINER jinliang <jinliang@xxxx.com>
-ENV BUILDTIME 2018121318
+ENV BUILDTIME 2018122511
 
 RUN mkdir -p /data/logs/web-demo/
 COPY templates /templates
