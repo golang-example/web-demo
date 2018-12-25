@@ -3,13 +3,13 @@
 
     "LogPath": "/data/logs/web-demo",
 
-    "RedisAddr": "127.0.0.1:6379",
+    "RedisAddr": "192.168.3.126:6379",
     "RedisPassword": "",
     "RedisMaxConn": 8,
 
     "MysqlUser": "root",
     "MysqlPwd": "root",
-    "MysqlHost": "127.0.0.1",
+    "MysqlHost": "192.168.3.126",
     "MysqlPort": 3306,
     "MysqlDb": "moxi",
     "MysqlMaxConn": 10,
