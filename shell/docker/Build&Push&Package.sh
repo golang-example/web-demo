@@ -40,11 +40,11 @@ Image_Name=${RegistryAddr}/$(echo $ProjectName | tr '[A-Z]' '[a-z]')/${branch}:v
 
 #create build-deploy file
 #macbook
-sed -i '' -e '2a \
-ProjectName='${ProjectName} docker-entrypoint.sh
+#sed -i '' -e '2a \
+#ProjectName='${ProjectName} docker-entrypoint.sh
 
 #linux
-#sed -i "2a ProjectName=${ProjectName}" docker-entrypoint.sh
+sed -i "2a ProjectName=${ProjectName}" docker-entrypoint.sh
 
 #build docker image
 docker build -t $Image_Name .
@@ -54,9 +54,9 @@ docker build -t $Image_Name .
 
 #delete
 #macbook
-sed -i '' '3d' docker-entrypoint.sh
+#sed -i '' '3d' docker-entrypoint.sh
 #linux
-#sed -i '3d' docker-entrypoint.sh
+sed -i '3d' docker-entrypoint.sh
 
 rm -rf ${ProjectName}
 
