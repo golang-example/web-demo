@@ -18,14 +18,14 @@ type ConfigMap struct {
 
 	RedisAddr			string		`json:"RedisAddr" yaml:"redis_addr"`
 	RedisPassword		string		`json:"RedisPassword" yaml:"redis_password"`
-	RedisMaxConn		int		    `json:"RedisMaxConn" yaml:"redis_max_conn"`
+	RedisMaxConn		int		    `json:"RedisMaxConn,string" yaml:"redis_max_conn"`
 
 	MysqlUser			string		`json:"MysqlUser" yaml:"mysql_user"`
 	MysqlPwd		    string		`json:"MysqlPwd" yaml:"mysql_pwd"`
 	MysqlHost		    string		`json:"MysqlHost" yaml:"mysql_host"`
-	MysqlPort		    int		    `json:"MysqlPort" yaml:"mysql_port"`
+	MysqlPort		    int		    `json:"MysqlPort,string" yaml:"mysql_port"`
 	MysqlDb		        string		`json:"MysqlDb" yaml:"mysql_db"`
-	MysqlMaxConn		int		    `json:"MysqlMaxConn" yaml:"mysql_max_conn"`
+	MysqlMaxConn		int		    `json:"MysqlMaxConn,string" yaml:"mysql_max_conn"`
 
 	Liang		        string		`json:"Liang" yaml:"liang"`
 }
