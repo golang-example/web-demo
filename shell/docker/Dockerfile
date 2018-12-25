@@ -1,4 +1,4 @@
-FROM alpine-http-latest
+FROM beyondyinjl/alpine-http
 MAINTAINER jinliang <jinliang@xxxx.com>
 ENV BUILDTIME 2018122511
 

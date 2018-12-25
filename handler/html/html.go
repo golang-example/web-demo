@@ -3,6 +3,7 @@ package html
 import (
 	"web-demo/web"
 	"github.com/kataras/iris"
+	. "web-demo/config"
 )
 
 func init() {
@@ -19,7 +20,7 @@ func userinfo(ctx *iris.Context) {
 
 	ctx.MustRender("user_info.html", map[string]interface{}{
 		"Id": 1,
-		"UserName": "liang",
+		"UserName": Cfg.Liang,
 		"Pwd": "123456",
 		})
 

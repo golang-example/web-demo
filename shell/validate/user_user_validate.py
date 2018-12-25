@@ -3,6 +3,7 @@
 
 import json
 import urllib2
+import random
 
 print "run user user validate..."
 
@@ -12,11 +13,12 @@ uri = '/webdemo/user/v1/add'
 
 def gen_param():
     return {
-        "userName" : "liang",
+        "userName" : "abcd" + bytes(random.randint(0,100)),
         "pwd" : "123456"
     }
 
 def request_and_parse(_values):
+    print _values
     request = urllib2.Request(host + uri, json.dumps(_values))
     request.add_header('X-Client', '1.0.1;Andirod;4.1;zh-CN;Africa/Lagos;4G')
     request.add_header('X-Web-Demo-RequestId', '123456789')

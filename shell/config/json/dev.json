@@ -11,6 +11,8 @@
     "MysqlPwd": "root",
     "MysqlHost": "127.0.0.1",
     "MysqlPort": 3306,
-    "MysqlDb": "test",
-    "MysqlMaxConn": 10
+    "MysqlDb": "moxi",
+    "MysqlMaxConn": 10,
+
+    "Liang": "test hello"
 }

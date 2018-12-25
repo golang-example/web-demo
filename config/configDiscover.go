@@ -26,12 +26,14 @@ type ConfigMap struct {
 	MysqlPort		    int		    `json:"MysqlPort" yaml:"mysql_port"`
 	MysqlDb		        string		`json:"MysqlDb" yaml:"mysql_db"`
 	MysqlMaxConn		int		    `json:"MysqlMaxConn" yaml:"mysql_max_conn"`
+
+	Liang		        string		`json:"Liang" yaml:"liang"`
 }
 
 func ConfigRead() {
 	config := new(ConfigMap)
 	config.readConfigFromYaml()
-	//config.readConfigFromEtcd()
+	config.readConfigFromEtcd()
 	fmt.Println("Final config: ", config)
 
 	if config.ListenPort == "" {

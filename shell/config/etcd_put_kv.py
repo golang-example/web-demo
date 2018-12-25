@@ -4,7 +4,7 @@
 import urllib2
 import json
 
-url = "http://127.0.0.1:2379/v2/keys/config/web-demo/"
+url = "http://192.168.1.52:2379/v2/keys/config/web-demo/"
 
 def read_json(file_name):
     with open(file_name) as json_file:
@@ -12,7 +12,7 @@ def read_json(file_name):
         return data
 
 def sent_request(k, v):
-    request = urllib2.Request(url+k, 'value='+v)
+    request = urllib2.Request(url+k, 'value='+bytes(v))
     request.get_method = lambda:'PUT'
     request = urllib2.urlopen(request)
     print request.read()
