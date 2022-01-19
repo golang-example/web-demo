@@ -1,7 +1,7 @@
 {
 	"ImportPath": "web-demo",
 	"GoVersion": "go1.8",
-	"GodepVersion": "v74",
+	"GodepVersion": "v80",
 	"Deps": [
 		{
 			"ImportPath": "github.com/BurntSushi/toml",
@@ -47,6 +47,16 @@
 			"Rev": "dc3312cb1a4513a366c4c9e622ad55c32df12ed3"
 		},
 		{
+			"ImportPath": "github.com/garyburd/redigo/internal",
+			"Comment": "v1.6.0-3-g569eae5",
+			"Rev": "569eae59ada904ea8db7a225c2b47165af08735a"
+		},
+		{
+			"ImportPath": "github.com/garyburd/redigo/redis",
+			"Comment": "v1.6.0-3-g569eae5",
+			"Rev": "569eae59ada904ea8db7a225c2b47165af08735a"
+		},
+		{
 			"ImportPath": "github.com/geekypanda/httpcache",
 			"Comment": "v0.0.1-8-gd4f6c21",
 			"Rev": "d4f6c21f9136210f409ed330fdeaa406b9fa0a73"
@@ -72,6 +82,11 @@
 			"Rev": "d4f6c21f9136210f409ed330fdeaa406b9fa0a73"
 		},
 		{
+			"ImportPath": "github.com/go-sql-driver/mysql",
+			"Comment": "v1.2-213-g665b834",
+			"Rev": "665b83488b90b902ce0a305ef6652e599771cdf9"
+		},
+		{
 			"ImportPath": "github.com/google/go-github/github",
 			"Rev": "d4f1b2d029be1730fd349ca929cc9c0da4a27007"
 		},
@@ -84,16 +99,6 @@
 			"Rev": "e34a5cd6a1bc7c4fde759f2d3039852fc68b5fcc"
 		},
 		{
-			"ImportPath": "github.com/go-sql-driver/mysql",
-			"Comment": "v1.2-213-g665b834",
-			"Rev": "665b83488b90b902ce0a305ef6652e599771cdf9"
-		},
-		{
-			"ImportPath": "github.com/jinzhu/gorm",
-			"Comment": "v1.0-96-g066abce",
-			"Rev": "066abcef408f2522f0a89952e44ab17eac176ed0"
-		},
-		{
 			"ImportPath": "github.com/gorilla/websocket",
 			"Comment": "v1.0.0-39-ge8f0f8a",
 			"Rev": "e8f0f8aaa98dfb6586cbdf2978d511e3199a960a"
@@ -101,10 +106,6 @@
 		{
 			"ImportPath": "github.com/hashicorp/go-version",
 			"Rev": "e96d3840402619007766590ecea8dd7af1292276"
-		},
-		{
-			"ImportPath": "github.com/ibbd-dev/go-async-log",
-			"Rev": "a5c968f2b3f34c14f4891e51c935a9c634a47df4"
 		},
 		{
 			"ImportPath": "github.com/imdario/mergo",
@@ -132,6 +133,15 @@
 		{
 			"ImportPath": "github.com/jinzhu/configor",
 			"Rev": "afba9d6631fcfd937819fac7a3bdebcb1afd82c3"
+		},
+		{
+			"ImportPath": "github.com/jinzhu/gorm",
+			"Comment": "v1.0-96-g066abce",
+			"Rev": "066abcef408f2522f0a89952e44ab17eac176ed0"
+		},
+		{
+			"ImportPath": "github.com/jinzhu/inflection",
+			"Rev": "04140366298a54a039076d798123ffa108fff46c"
 		},
 		{
 			"ImportPath": "github.com/jtolds/gls",
@@ -303,10 +313,6 @@
 			"Rev": "728b753d0135da6801d45a38e6f43ff55779c5c2"
 		},
 		{
-			"ImportPath": "golang.org/x/crypto/pbkdf2",
-			"Rev": "728b753d0135da6801d45a38e6f43ff55779c5c2"
-		},
-		{
 			"ImportPath": "golang.org/x/net/context",
 			"Rev": "a6577fac2d73be281a500b310739095313165611"
 		},
@@ -333,15 +339,6 @@
 		{
 			"ImportPath": "gopkg.in/afmobi-QSee/service-manager.v3",
 			"Rev": "e0e698d3f4f083d5f8a9dd014e0e1d7398999a7e"
-		},
-		{
-			"ImportPath": "gopkg.in/afmobi-QSee/statlog.v1",
-			"Rev": "bb9842316728f264f55d731a4a107dfe018cb487"
-		},
-		{
-			"ImportPath": "gopkg.in/alexcesaro/statsd.v2",
-			"Comment": "v2.0.0",
-			"Rev": "7fea3f0d2fab1ad973e641e51dba45443a311a90"
 		},
 		{
 			"ImportPath": "gopkg.in/yaml.v2",
